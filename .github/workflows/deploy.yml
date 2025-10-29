@@ -1,0 +1,9 @@
+name: Deploy - Dev
+on:
+  workflow_dispatch:
+jobs:
+  reuse:
+    uses: devops-learning-projects/roboshop-github-actions/.github/workflows/deploy.yml@main
+    with:
+      app_name: user
+      app_env: dev
